@@ -13,5 +13,8 @@ app.use(cors({
 
 
 app.use("/api/v1", router);
+module.exports = (req, res) => {
+  app(req, res);
+};
 
 app.listen(3000);
